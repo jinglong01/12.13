@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<input type="text" v-model="inputValue">
+		<h1>{{changeValue}}</h1>
+
+	</div>
+	<script>
+		var vm =new Vue({
+			el:'#app',
+			data:{
+				changeValue:''
+			},
+			computed:{
+				changeValue:function (){
+					if(this.inputValue !==''){
+						return this.inputValue;
+					}else{
+						return 'empty';
+					}
+				}
+			}
+
+		})
+	</script>
+	
+</body>
+</html>

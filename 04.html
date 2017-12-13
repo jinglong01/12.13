@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		var length =10;
+		function fn(){
+			console.log(this.length);
+		}
+		var obj ={
+			length:5,
+			method:function (fn){
+				fn();
+				arguments[0]();
+			}
+		}
+	</script>
+</body>
+</html>

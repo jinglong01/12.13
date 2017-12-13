@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		if(window.XMLHttprequest){
+			//兼容所有浏览器
+			var oAjax =new XMLHttprequest();
+		}else{
+			//ie5,6
+			var oAjax =new ActiveXObject("Microsoft.XMLHTTP");
+		}
+
+		// 2.打开链接 是否异步
+		oAjax.open("GET",rul,true)
+		// post
+		// oAjax.open('POST',url,true);
+		// POST需要设置请求头
+		// 3.发送
+		oAjax.send();
+
+		// 4.接受
+		oAjax.onreadystatechange =function (){
+			if(oAjax.readyState ==4){
+				if(oAjax.status >=200 && oAjax.status <=299 || oAjax.status ==304){
+					//执行成功的回调函数
+				}else{
+					//失败的回调函数
+				}
+			}
+		}
+	</script>
+	
+</body>
+</html>

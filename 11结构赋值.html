@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>结构赋值</title>
+</head>
+<body>
+	<script>
+		// var a=[1,2,3];
+		// var a1=a[0];
+		// var a2 =a[1];
+		// var a3=a[2];
+		// console.log(a1,a2,a3)之前
+		var [a1,a2,a3] =[1,2,3];
+		console.log(a1,a2,a3) //数组是根据索引的来结构的
+		let [foo,[[bar],baz]] =[1,[[2],3]];
+		console.log(foo,bar,baz)
+		// 对象的结构赋值 是根据键值 就是属性名 属性值来结构的
+		let {foo1,bar1} ={foo1:"aaa",bar1:"bbb"};
+		console.log(foo1,bar1)
+
+		var {foo2:baz1,bar2} ={foo2:'aaa',bar2:'bbb'}
+		console.log(baz1,bar2);
+
+		//字符串结构赋值
+
+		var s= 'hello';
+		console.log(s.charAt(2));
+
+		const [a,f,c,d,e] ='hello';
+		console.log(a,f,c,d,e)
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+
+	@keyframes up{
+		0%{trasform:rotate(0);}
+		50%{transform:rotate(45deg);}
+		100%{transform:rotate(0);}
+	}
+	@keyframes down{
+		0%{transform:rotate(0);}
+		50%{transform:rotate(-45deg);}
+		100%{transform:rotate(0);}
+	}
+		.box{position:relative;margin:50px;top :0px;left:10px;}
+
+		div{width: 0;height: 0;border-top: 40px solid blue;border-right:40px solid blue; border-bottom: 40px solid black;border-left: 40px solid transparent;border-radius:50%;position: absolute;
+			top:-40px;left:-40px;
+			}
+
+			.box div:nth-child(1){animation:up 1s infinite;-webkit-animation:up 1s infinite;}
+			.box div:last-child{animation:down 1s infinite;-webkit-animation:down 1s infinite;}
+	</style>
+</head>
+<body class="box">
+	<div></div>
+	<div></div>
+</body>
+</html>

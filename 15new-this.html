@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		function Car(name,wheel){
+			this.wheels =wheel;
+			this.name =name;
+			this.pao =function(){
+				console.log(this.name +"在奔跑")
+			}
+		}
+
+		var benchi =new Car("奔驰车",4);
+		benchi.pao();
+
+		var baoma =new Car("宝马车",3);
+		baoma.pao();
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		div{width: 100px;height:100px;background-color:green;display: none;}
+	</style>
+	<script src="jquery.min.js"></script>
+	<script>
+		$(function (){
+			$('button').click(function() {
+				$('div').show().stop().animate({width:500,height:500},{duration:3000,easing:'linear'}).css('background-color','red').transform('translateX','500px')
+			});
+		})
+	</script>
+</head>
+<body>
+	<button>点击</button>
+	<div></div>
+</body>
+</html>

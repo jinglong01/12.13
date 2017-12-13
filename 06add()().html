@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		function add(a){
+			return function (b){
+				return function (c){
+					return a+b+c;
+				}
+			}
+		}
+
+		alert(add(3)(4)(5))
+	</script>
+</body>
+</html>

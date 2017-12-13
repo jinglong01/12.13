@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="vue.js"></script>
+
+</head>
+<body>
+	<div id="app">
+		<alert></alert>
+	</div>
+	<script>
+		Vue.component('alert',{
+			template:`
+				<div>
+					<div class="alert" :class="{inof:isinfo}"></div>
+				</div>
+			`,
+			data:function (){
+				return {
+
+				};
+			},
+			props:{
+				type:{
+					type:String,
+					default :'info'
+				}
+			},
+			computed:{
+				isInfo:
+			}
+		})
+	</script>
+</body>
+</html>

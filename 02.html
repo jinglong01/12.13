@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// var two =0.2
+		// var one =0.1
+		// var eight =0.8
+		// var six = 0.6
+		// alert([two-one ==one,eight -six ==two]) //true false
+
+		function sidEffecting(arr){
+			arr[0] =arr[2];
+		}
+		function bar(a,b,c){
+			c =10
+			sidEffecting(arguments);
+			return a+b+c
+		}
+		alert(bar(1,1,1)) //21
+	</script>
+</body>
+</html>

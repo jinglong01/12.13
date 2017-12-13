@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+		var data ={
+			act :'add',
+			user:'zs',
+			pass:'add_pass)'
+		}
+		data.t =Math.random();
+		console.log(data);
+		// for in 循环是循环对象的
+		var arr =[];
+		for (var key in data){
+			key+ '='+data[key];
+			arr.push(key + '='+data[key]);
+		}
+		console.log(arr);
+		var jsonurl= arr.join('&');
+		console.log(jsonurl)
+	</script>
+</head>
+<body>
+
+	
+</body>
+</html>

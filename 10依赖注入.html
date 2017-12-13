@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+	var myFuncFactory = function(logger) {
+        return function() {
+          var result = doSomething();
+         return logger.write(result);
+	     }
+	}
+	var myFunc = myFuncFactory(logger);
+	myFunc();
+	var myFuncAlert = myFuncFactory(loggerAlert);
+	console.log(myFuncAlert())
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
